@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE web-app
+        PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+    <servlet>
+        <servlet-name>HelloServlet</servlet-name>
+        <servlet-class>com.coreservlets.book.HelloServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LotteryNumbers</servlet-name>
+        <servlet-class>com.coreservlets.book.LotteryNumbers</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UserIDs</servlet-name>
+        <servlet-class>com.coreservlets.book.UserIDs</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SubmitInsuranceInfo</servlet-name>
+        <servlet-class>com.coreservlets.book.SubmitInsuranceInfo</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HelloServlet</servlet-name>
+        <url-pattern>/helloservlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LotteryNumbers</servlet-name>
+        <url-pattern>/lotterynumbers</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UserIDs</servlet-name>
+        <url-pattern>/userids</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SubmitInsuranceInfo</servlet-name>
+        <url-pattern>/SubmitInsuranceInfo</url-pattern>
+    </servlet-mapping>
+</web-app>
