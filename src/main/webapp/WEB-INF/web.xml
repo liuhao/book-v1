@@ -19,6 +19,10 @@
         <servlet-name>SubmitInsuranceInfo</servlet-name>
         <servlet-class>com.coreservlets.book.SubmitInsuranceInfo</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>PrimeNumberServlet</servlet-name>
+        <servlet-class>com.coreservlets.book.primes.PrimeNumberServlet</servlet-class>
+    </servlet>
 
     <servlet-mapping>
         <servlet-name>HelloServlet</servlet-name>
@@ -35,5 +39,9 @@
     <servlet-mapping>
         <servlet-name>SubmitInsuranceInfo</servlet-name>
         <url-pattern>/SubmitInsuranceInfo</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PrimeNumberServlet</servlet-name>
+        <url-pattern>/PrimeNumberServlet</url-pattern>
     </servlet-mapping>
 </web-app>
