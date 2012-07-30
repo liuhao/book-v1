@@ -23,6 +23,10 @@
         <servlet-name>PrimeNumberServlet</servlet-name>
         <servlet-class>com.coreservlets.book.primes.PrimeNumberServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ShadowedText</servlet-name>
+        <servlet-class>com.coreservlets.book.imageoutput.ShadowedText</servlet-class>
+    </servlet>
 
     <servlet-mapping>
         <servlet-name>HelloServlet</servlet-name>
@@ -43,5 +47,9 @@
     <servlet-mapping>
         <servlet-name>PrimeNumberServlet</servlet-name>
         <url-pattern>/PrimeNumberServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ShadowedText</servlet-name>
+        <url-pattern>/ShadowedText</url-pattern>
     </servlet-mapping>
 </web-app>
