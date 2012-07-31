@@ -27,6 +27,22 @@
         <servlet-name>ShadowedText</servlet-name>
         <servlet-class>com.coreservlets.book.imageoutput.ShadowedText</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>RepeatVisitor</servlet-name>
+        <servlet-class>com.coreservlets.book.cookie.RepeatVisitor</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RepeatVisitor2</servlet-name>
+        <servlet-class>com.coreservlets.book.cookie.RepeatVisitor2</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CookieTest</servlet-name>
+        <servlet-class>com.coreservlets.book.cookie.CookieTest</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ClientAccessCounts</servlet-name>
+        <servlet-class>com.coreservlets.book.cookie.ClientAccessCounts</servlet-class>
+    </servlet>
 
     <servlet-mapping>
         <servlet-name>HelloServlet</servlet-name>
@@ -51,5 +67,21 @@
     <servlet-mapping>
         <servlet-name>ShadowedText</servlet-name>
         <url-pattern>/ShadowedText</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RepeatVisitor</servlet-name>
+        <url-pattern>/RepeatVisitor</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RepeatVisitor2</servlet-name>
+        <url-pattern>/RepeatVisitor2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CookieTest</servlet-name>
+        <url-pattern>/CookieTest</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ClientAccessCounts</servlet-name>
+        <url-pattern>/ClientAccessCounts</url-pattern>
     </servlet-mapping>
 </web-app>
