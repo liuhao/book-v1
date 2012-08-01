@@ -23,7 +23,7 @@ public class RegistrationForm extends HttpServlet {
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
         String actionURL =
-                "/servlet/coreservlets.RegistrationServlet";
+                "/RegistrationServlet";
         String firstName =
                 CookieUtilities.getCookieValue(request, "firstName", "");
         String lastName =
