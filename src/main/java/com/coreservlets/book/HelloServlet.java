@@ -15,15 +15,17 @@ import javax.servlet.http.*;
  */
 
 public class HelloServlet extends HttpServlet {
+    private static int stillthere = 1;
     public void doGet(HttpServletRequest request,
                       HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html");
+        stillthere += 1;
         PrintWriter out = response.getWriter();
         String title = "Hello (3)";
         out.println(ServletUtilities.headWithTitle(title) +
                 "<BODY BGCOLOR=\"#FDF5E6\">\n" +
-                "<H1>" + title + "</H1>\n" +
+                "<H1>" + title + "</H1>\n" + stillthere +
                 "</BODY></HTML>");
     }
 }

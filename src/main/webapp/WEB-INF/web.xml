@@ -59,6 +59,18 @@
         <servlet-name>ShowItems</servlet-name>
         <servlet-class>com.coreservlets.book.session.ShowItems</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>KidsBooksPage</servlet-name>
+        <servlet-class>com.coreservlets.book.session.KidsBooksPage</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>TechBooksPage</servlet-name>
+        <servlet-class>com.coreservlets.book.session.TechBooksPage</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>OrderPage</servlet-name>
+        <servlet-class>com.coreservlets.book.session.OrderPage</servlet-class>
+    </servlet>
 
     <servlet-mapping>
         <servlet-name>HelloServlet</servlet-name>
@@ -115,5 +127,17 @@
     <servlet-mapping>
         <servlet-name>ShowItems</servlet-name>
         <url-pattern>/ShowItems</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>KidsBooksPage</servlet-name>
+        <url-pattern>/KidsBooksPage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TechBooksPage</servlet-name>
+        <url-pattern>/TechBooksPage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>OrderPage</servlet-name>
+        <url-pattern>/OrderPage</url-pattern>
     </servlet-mapping>
 </web-app>
