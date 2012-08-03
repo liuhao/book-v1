@@ -71,6 +71,10 @@
         <servlet-name>OrderPage</servlet-name>
         <servlet-class>com.coreservlets.book.session.OrderPage</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ThreeParams</servlet-name>
+        <servlet-class>com.coreservlets.book.jsp.ThreeParams</servlet-class>
+    </servlet>
 
     <servlet-mapping>
         <servlet-name>HelloServlet</servlet-name>
@@ -139,5 +143,9 @@
     <servlet-mapping>
         <servlet-name>OrderPage</servlet-name>
         <url-pattern>/OrderPage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ThreeParams</servlet-name>
+        <url-pattern>/ThreeParams</url-pattern>
     </servlet-mapping>
 </web-app>
