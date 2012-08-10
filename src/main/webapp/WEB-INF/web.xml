@@ -75,6 +75,22 @@
         <servlet-name>ThreeParams</servlet-name>
         <servlet-class>com.coreservlets.book.jsp.ThreeParams</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ShowBalance</servlet-name>
+        <servlet-class>com.coreservlets.book.mvc.ShowBalance</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RandomNumberServlet</servlet-name>
+        <servlet-class>com.coreservlets.book.mvc.RandomNumberServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PrimeServlet</servlet-name>
+        <servlet-class>com.coreservlets.book.mvc.PrimeServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>MvcRegistrationServlet</servlet-name>
+        <servlet-class>com.coreservlets.book.mvc.RegistrationServlet</servlet-class>
+    </servlet>
 
     <servlet-mapping>
         <servlet-name>HelloServlet</servlet-name>
@@ -147,5 +163,21 @@
     <servlet-mapping>
         <servlet-name>ThreeParams</servlet-name>
         <url-pattern>/ThreeParams</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ShowBalance</servlet-name>
+        <url-pattern>/ShowBalance</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MvcRegistrationServlet</servlet-name>
+        <url-pattern>/MvcRegistrationServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PrimeServlet</servlet-name>
+        <url-pattern>/PrimeServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RandomNumberServlet</servlet-name>
+        <url-pattern>/RandomNumberServlet</url-pattern>
     </servlet-mapping>
 </web-app>
