@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE web-app
-        PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
-        "http://java.sun.com/dtd/web-app_2_3.dtd">
-<web-app>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation=
+                 "http://java.sun.com/xml/ns/j2ee web-app_2_4.xsd"
+         version="2.4">
     <servlet>
         <servlet-name>HelloServlet</servlet-name>
         <servlet-class>com.coreservlets.book.HelloServlet</servlet-class>
@@ -90,6 +91,22 @@
     <servlet>
         <servlet-name>MvcRegistrationServlet</servlet-name>
         <servlet-class>com.coreservlets.book.mvc.RegistrationServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ScopedVars</servlet-name>
+        <servlet-class>com.coreservlets.book.el.ScopedVars</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>BeanProperties</servlet-name>
+        <servlet-class>com.coreservlets.book.el.BeanProperties</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Collections</servlet-name>
+        <servlet-class>com.coreservlets.book.el.Collections</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Conditionals</servlet-name>
+        <servlet-class>com.coreservlets.book.el.Conditionals</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -179,5 +196,21 @@
     <servlet-mapping>
         <servlet-name>RandomNumberServlet</servlet-name>
         <url-pattern>/RandomNumberServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ScopedVars</servlet-name>
+        <url-pattern>/el/ScopedVars</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BeanProperties</servlet-name>
+        <url-pattern>/el/BeanProperties</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Collections</servlet-name>
+        <url-pattern>/el/Collections</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Conditionals</servlet-name>
+        <url-pattern>/el/Conditionals</url-pattern>
     </servlet-mapping>
 </web-app>
